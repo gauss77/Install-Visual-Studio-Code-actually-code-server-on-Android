@@ -80,10 +80,11 @@
     $ npm test
     ```
 
-12. Finally, start code-server with the following command:
+12. Finally, change the working directory back to home and start code-server with the following command:
 
     ```sh
-     $ code-server --auth none --disable-telemetry
+    $ cd ~
+    $ code-server --auth none --disable-telemetry
     ```
 
     <img src="https://imgur.com/CxOgPvg.png" width="200">
