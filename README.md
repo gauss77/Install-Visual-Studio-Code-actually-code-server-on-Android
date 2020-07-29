@@ -115,3 +115,11 @@
     ```
 
     <img src="https://imgur.com/uvahAtt.png" width="200">
+
+    You can get the public IP address of your device using the command below in Termux:
+    
+    ```sh
+    $ ifconfig
+    ```
+    
+    <img src="https://imgur.com/bpC0dkO.png" width="400">
