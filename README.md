@@ -80,7 +80,15 @@
     $ npm test
     ```
 
-12. Finally, change the working directory back to home and start code-server with the following command:
+12. To fix the file search function of code-server, install `ripgrep` via `pkg` and link it to the correct place:
+
+    ```sh
+    $ pkg install ripgrep -y
+    $ cd ~/.config/yarn/global/node_modules/code-server/lib/vscode/node_modules/vscode-ripgrep/bin
+    $ ln -s $(which rg) .
+    ```
+
+13. Finally, change the working directory back to home and start code-server with the following command:
 
     ```sh
     $ cd ~
@@ -89,11 +97,11 @@
 
     <img src="https://imgur.com/CxOgPvg.png" width="200">
 
-13. Now, you can open your browser and visit code-server at [http://localhost:8080](http://localhost:8080).
+14. Now, you can open your browser and visit code-server at [http://localhost:8080](http://localhost:8080).
 
     <img src="https://imgur.com/dNOPggB.png" width="200">
 
-14. (Bonus) If you wish to visit this code-server from another device in the same local network, you can expose the HTTP service to all network interfaces by starting code-server with `--bind-addr`:
+15. (Bonus) If you wish to visit this code-server from another device in the same local network, you can expose the HTTP service to all network interfaces by starting code-server with `--bind-addr`:
 
     ```sh
     $ code-server --bind-addr 0.0.0.0:8080 --disable-telemetry
