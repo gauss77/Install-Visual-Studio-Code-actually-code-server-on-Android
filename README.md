@@ -31,20 +31,6 @@
    ```
 
    <img src="https://imgur.com/QV44UnH.png" width="200">
-   
-   **Update**
-   
-   If you do not find the `~/.config/yarn/global/node_modules/code-server/lib/vscode/node_modules`, then you are using a newer version of `code-server` (https://github.com/cdr/code-server/issues/2285). In this case, you need to go to the `vscode` directory and install the dependencies manually:
-   
-   ```sh
-   $ cd ~/.config/yarn/global/node_modules/code-server/lib/vscode/
-   $ pkg install git
-   $ yarn install
-   $ rm node_modules.asar && ln -s node_modules node_modules.asar
-   $ cd ~/.config/yarn/global/node_modules/code-server/lib/vscode/node_modules/spdlog/
-   ```
-   
-   It does not matter if you meet a `gyp` error during the installation.
 
 6. You will need a text editor for the next step. Here Vim is used for this task, but you are free to use whatever text editor you love:
 
